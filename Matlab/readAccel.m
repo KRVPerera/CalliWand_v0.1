@@ -13,7 +13,7 @@ function [ax ay az] = readAccel(out, calCo)
     accel = (readings - offset) ./gain;
 
     % map analog inputs to axis
-    ax = accel(1)
+    ax = accel(1);
     ay = accel(2);
     az = accel(3);
 end
